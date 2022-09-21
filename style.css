@@ -1,0 +1,125 @@
+img#top-bar{
+    height: auto;
+    max-height: 20rem;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+.traco{
+    height: .2rem;
+    background-color: black;
+    width: 2rem;
+}
+
+*{
+    z-index: 1;
+    font-family: 'Poppins', sans-serif;
+}
+
+.splash-nav{
+    display: flex;
+    height: 100%;
+}
+
+.splash-welcome{
+    display: flex;
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.splash-nav p{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+
+    transition: all .2s ease;
+}
+
+.splash-description{
+    margin-top: 15rem;
+}
+
+.splash-description-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.splash-description-text p{
+    color: grey;
+    font-weight: lighter;
+    letter-spacing: .3rem;
+    margin: 0;
+}
+
+.splash-description-text h2{
+    letter-spacing: .2rem;
+}
+
+.splash-button-container p{
+    margin: 0;
+}
+
+.splash-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 5rem;
+}
+
+.splash-button-container a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    border-radius: 2rem;
+
+    transition: all .2s ease;
+}
+
+.splash-button-container{
+    height: 3rem;
+    width: 15rem;
+
+    padding: 0;
+
+    border-radius: 2rem;
+
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(25,25,25,1) 100%);
+}
+
+.splash-button-container a:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px){
+    img#top-bar{
+        opacity: 0;
+        transition: all .2s ease;
+    }
+
+    .splash-nav p{
+        color: black;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+}

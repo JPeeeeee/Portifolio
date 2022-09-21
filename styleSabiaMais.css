@@ -1,0 +1,259 @@
+.saibamais-welcome a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 3rem;
+
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+    transition: all .2s ease;
+}
+
+.saibamais-welcome a:hover{
+    transform: scale(1.1);
+}
+
+.sobre-mim{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15rem;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: justify;
+
+}
+
+.titulo h1{
+    font-weight: bold;
+}
+
+.titulo p{
+    width: 50%;
+
+    margin-top: 3rem;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img#eu{
+    height: 25rem;
+    border-radius: 2rem;
+
+    margin-top: 3rem;
+}
+
+img#seta-eu{
+    height: 10rem;
+}
+
+img#logo-mjd{
+    height: 100%;
+    width: 100%;
+
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem;
+
+}
+
+img.item-image{
+    height: 3rem;
+}
+
+.habilidades-texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    margin-top: 5rem;
+}
+
+.habilidades-texto h4{
+    font-weight: bold;
+}
+
+.habilidades{
+    margin: 5rem 0rem;
+    padding: 0rem 10rem;
+}
+
+.habilidades-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.habilidades-item p{
+    margin-top: .5rem;
+}
+
+.card-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    height: 30rem;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: row;
+
+    margin: 5rem 0rem;
+    
+    border-radius: 2rem;
+    border: none;
+
+    box-shadow: 10px 10px 0px;
+
+    border-top: 1px solid rgb(210, 210, 210);
+    border-left: 1px solid rgb(210, 210, 210);
+
+    padding: 0;
+}
+
+.lado1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 100%;
+    width: 100%;
+    border-bottom-left-radius: 2rem;
+    border-top-left-radius: 2rem;
+
+    padding: 3rem;
+}
+
+.lado2{
+    height: 100%;
+    width: 100%;    
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-left: 3px solid;
+    border-top: 3px solid;
+    border-right: 3px solid;
+}
+
+#lado-mjd{
+    background-color: #161B40;
+}
+
+#lado-ecomp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    background-color: #00cc99;
+}
+
+.lado1 h1{
+    margin-bottom: 4rem;
+
+    font-weight: bold;
+}
+
+.lado1 p{
+    text-align: justify;
+}
+
+.projetos-row{
+    margin-top: 5rem;
+}
+
+.projetos-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+}
+
+.projetos-title h1{
+    font-weight: bold;
+}
+
+.projetos-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    text-align: justify;
+}
+
+.projetos-content p{
+    width: 50%;
+    margin-top: 3rem;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1024px){
+    img#top-bar{
+        opacity: 0;
+        transition: all .2s ease;
+    }
+
+    .saibamais-welcome p{
+        color: black;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .sobre-mim{
+        margin-top: 10rem;
+    }
+
+    .card{
+        flex-direction: column-reverse;
+        height: fit-content;
+    }
+    
+    .lado2{
+        border: solid;
+        border-radius: 0;
+
+        padding: 2rem;
+
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+    }
+
+    img#eu{
+        height: 20rem;
+    }
+
+    img#seta-eu{
+        display: none;
+    }
+
+    img#logo-ecomp{
+        height: 5rem;
+    }
+}
