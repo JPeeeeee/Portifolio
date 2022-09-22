@@ -70,6 +70,13 @@ img#logo-mjd{
 
 }
 
+img#github{
+    height: 5rem;
+    margin: 3rem;
+
+    border-radius: 1rem;
+}
+
 img.item-image{
     height: 3rem;
 }
@@ -201,7 +208,9 @@ img.item-image{
     display: flex;
     justify-content: center;
     align-items: center;    
-    text-align: justify;
+    text-align: center;
+
+    flex-direction: column;
 }
 
 .projetos-content p{

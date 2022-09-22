@@ -6,6 +6,7 @@ img#top-bar{
     z-index: 0;
 }
 
+
 .traco{
     height: .2rem;
     background-color: black;
@@ -50,7 +51,7 @@ img#top-bar{
 
 .splash-description-text p{
     color: grey;
-    font-weight: lighter;
+    font-weight: light;
     letter-spacing: .3rem;
     margin: 0;
 }
