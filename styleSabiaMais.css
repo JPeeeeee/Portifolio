@@ -1,3 +1,11 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
 .saibamais-welcome a{
     display: flex;
     justify-content: center;
@@ -6,6 +14,7 @@
     margin-top: 3rem;
 
     text-decoration: none;
+    text-align: center;
     color: white;
     font-weight: bold;
     font-size: 1.5rem;
@@ -30,7 +39,7 @@
     justify-content: center;
     align-items: center;
 
-    text-align: justify;
+    text-align: center;
 
 }
 
@@ -39,9 +48,11 @@
 }
 
 .titulo p{
-    width: 50%;
+    width: 100%;
+}
 
-    margin-top: 3rem;
+.images{
+    width: 100%;
 }
 
 .image-container{
@@ -81,14 +92,30 @@ img.item-image{
     height: 3rem;
 }
 
+.skills{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    margin-top: 3rem;
+    width: 80%;
+}
+
 .habilidades-texto{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 
     flex-direction: column;
 
-    margin-top: 5rem;
+    margin-top: 0rem;
+}
+
+.habilidades-texto p{
+    width: 80%;
+
+    margin-top: 2rem;
 }
 
 .habilidades-texto h4{
@@ -96,8 +123,12 @@ img.item-image{
 }
 
 .habilidades{
-    margin: 5rem 0rem;
+    margin: 3rem 0rem;
     padding: 0rem 10rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .habilidades-item{
@@ -119,8 +150,8 @@ img.item-image{
 }
 
 .card{
-    height: 30rem;
-    width: 70%;
+    height: 40rem;
+    width: 75%;
     display: flex;
     justify-content: center;
     align-items: center;
