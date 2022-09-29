@@ -96,6 +96,39 @@ img.item-image{
     height: 3rem;
 }
 
+.feitos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feitos-titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.feitos-content{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 60rem;
+}
+
+.feitos-content p{
+    margin: 2rem;
+    width: 30rem;
+}
+
+.feitos-titulo h4{
+    font-weight: bold;
+    margin-top: 3rem;
+}
+
 .skills{
     display: flex;
     justify-content: center;
