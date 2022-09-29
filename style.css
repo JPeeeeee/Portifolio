@@ -1,3 +1,13 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    flex-direction: column;
+}
+
 img#top-bar{
     height: auto;
     max-height: 20rem;
@@ -113,6 +123,10 @@ img#top-bar{
 
 
 @media screen and (max-width: 1024px){
+    .splash-description-text p{
+        font-size: smaller;
+    }
+
     img#top-bar{
         opacity: 0;
         transition: all .2s ease;

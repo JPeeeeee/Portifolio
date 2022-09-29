@@ -200,6 +200,8 @@ img.item-image{
     justify-content: center;
     align-items: center;
 
+    text-align: justify;
+
     flex-direction: row;
 
     margin: 5rem 0rem;
@@ -256,10 +258,6 @@ img.item-image{
     margin-bottom: 4rem;
 
     font-weight: bold;
-}
-
-.lado1 p{
-    text-align: justify;
 }
 
 .projetos-row{
@@ -323,6 +321,8 @@ img.item-image{
     .card{
         flex-direction: column-reverse;
         height: fit-content;
+
+        text-align: center;
     }
     
     .lado2{
