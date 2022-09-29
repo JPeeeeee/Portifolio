@@ -6,8 +6,15 @@
     flex-direction: column;
 }
 
+.ativo{
+    display: none;
+}
+
 .saibamais-nav{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .saibamais-welcome a{
@@ -100,6 +107,7 @@ img.item-image{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 60%;
 }
 
 .feitos-titulo{
@@ -121,7 +129,6 @@ img.item-image{
 
 .feitos-content p{
     margin: 2rem;
-    width: 30rem;
 }
 
 .feitos-titulo h4{
@@ -297,8 +304,14 @@ img.item-image{
         transition: all .2s ease;
     }
 
+    .saibamais-nav{
+        background-color: black;
+        width: 100vw;
+        padding-bottom: 2rem;
+        margin-bottom: -5rem;
+    }
+
     .saibamais-welcome p{
-        color: black;
         font-size: 1.5rem;
         font-weight: bold;
     }
