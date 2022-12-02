@@ -28,7 +28,7 @@
     box-shadow: none;
     border: solid .15rem white;
     box-shadow: rgb(107, 107, 107) 0rem .1rem 1rem .05rem;
-
+    transform: rotateZ(0deg);
 }
 
 .go-back-button span{
@@ -43,7 +43,6 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 10rem;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -89,35 +88,57 @@
 .saibamais-nav{
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.saibamais-welcome{
+    margin-top: 10rem;
+
+    width: fit-content;
+    
+    transition: all .2s ease;
 }
 
 .saibamais-welcome a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     text-decoration: none;
-    text-align: center;
     color: white;
     font-weight: bold;
     font-size: 2rem;
-
-    transition: all .2s ease;
-
-    z-index: 12;
 }
 
-.saibamais-welcome a:hover{
+.saibamais-welcome:hover{
     transform: scale(1.1);
 }
+
+.line:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: 0px;
+    left: -4px;
+    transform: scaleX(0);
+    box-shadow:
+       0 5px 0 #ffffff00,
+      0 10px 0 rgba(255, 255, 255, 0);
+    background: #ffffff ;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+  }
+  
+  .line:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
 
 .sobre-mim{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 35rem;
+    margin-top: 15rem;
 }
 
 .titulo{
@@ -125,7 +146,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    margin-top: 10rem;
     text-align: center;
 }
 
@@ -413,7 +434,7 @@ img.item-image{
     }
 
     .sobre-mim{
-        margin-top: 30rem;
+        margin-top: 10rem;
     }
 
     .card{
@@ -456,6 +477,12 @@ img.item-image{
         left: 1.5rem;
     }
 
+    .saibamais-welcome{
+        width: 100%;
+        height: fit-content;
+        margin: 0;
+    }
+
     .saibamais-welcome a{
         display: flex;
         justify-content: center;
@@ -469,15 +496,31 @@ img.item-image{
     
         transition: all .2s ease;
     }
+
+    .saibamais-nav{
+        margin-top: 3rem;
+    }
 }
 
 @media screen and (max-width: 465px){
+    .saibamais-nav{
+        margin-top: 5rem;
+        justify-content: center;
+    }
+
+    .saibamais-welcome{
+        width: 100%;
+        height: fit-content;
+        margin: 2rem;
+    }
+
     .saibamais-welcome p{
         font-size: 1.2rem;
+        margin: 0;
     }
 
     .sobre-mim{
-        margin-top: 30rem;
+        margin-top: 10rem;
     }
 
     .go-back-button{
