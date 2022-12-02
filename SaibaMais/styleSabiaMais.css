@@ -397,11 +397,11 @@ img.item-image{
     }
 
     .background{
-        padding: 5rem;
+        padding: 1rem;
     }
 
     .sobre-mim{
-        margin-top: 40rem;
+        margin-top: 30rem;
     }
 
     .card{
@@ -441,9 +441,7 @@ img.item-image{
     }
 
     .go-back-button{
-        top: auto;
-        bottom: 3rem;
-        left: 2rem;
+        left: 1.5rem;
     }
 
     .saibamais-welcome a{
@@ -458,6 +456,30 @@ img.item-image{
         font-size: 2rem;
     
         transition: all .2s ease;
+    }
+}
+
+@media screen and (max-width: 465px){
+    .saibamais-welcome p{
+        font-size: 1.2rem;
+    }
+
+    .sobre-mim{
+        margin-top: 30rem;
+    }
+
+    .go-back-button{
+        height: 3rem;
+        width: 3rem;
+        left: 1rem;
+    }
+
+    .go-back-button span{
+        transform: scale(1);
+    }
+
+    .projetos-content p{
+        font-size: 1rem;
     }
 }
 
