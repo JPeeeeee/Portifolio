@@ -4,25 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="styleSabiaMais.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>João Pedro V. Santos</title>
 </head>
 <body>
-    <img src="../images/top-bar.png" alt="" id="top-bar">
+
+    <a href="../index.html" class="go-back-button">
+        <span class="material-symbols-outlined">
+        first_page
+        </span>
+    </a>
     <div class="container" id="container">
-        <div class="saibamais-nav row">
-            <div class="saibamais-welcome col-lg-4">
-                <a href="#sobre-mim"><p>Sobre mim</p></a>
-            </div>
-            <div class="saibamais-welcome col-lg-4">
-                <a href="#empresas-ongs"><p>ONGs e Empresas</p></a>
-            </div>
-            <div class="saibamais-welcome col-lg-4">
-                <a href="#projetos"><p>Projetos</p></a>
+        <div class="background svg-image">
+            <div class="saibamais-nav row">
+                <div class="saibamais-welcome col-lg-4">
+                    <a href="#sobre-mim"><p>Sobre mim</p></a>
+                </div>
+                <div class="saibamais-welcome col-lg-4">
+                    <a href="#empresas-ongs"><p>ONGs e Empresas</p></a>
+                </div>
+                <div class="saibamais-welcome col-lg-4">
+                    <a href="#projetos"><p>Projetos</p></a>
+                </div>
             </div>
         </div>
         <div class="sobre-mim row" id="sobre-mim">
@@ -69,7 +77,7 @@
                     <div class="traco"></div>
                 </div>
             </div>
-            <div class="habilidades row">
+            <div class="habilidades habilidades1 row">
                 <div class="habilidades-item col-lg-4">
                     <img src="../images/html.png" alt="" class="item-image">
                     <p>HTML</p>
@@ -83,7 +91,7 @@
                     <p>JavaScript</p>
                 </div>
             </div>
-            <div class="habilidades row">
+            <div class="habilidades habilidades2 row">
                 <div class="habilidades-item col-lg-4">
                     <img src="../images/react.png" alt="" class="item-image">
                     <p style="text-align: center;">React Native</p>
@@ -130,12 +138,14 @@
                 </div>
             </div>
         </div>
-        <div class="projetos-row row" id="projetos">
+    </div>
+    <div class="footer footer-image">
+        <div class="projetos-row" id="projetos">
             <div class="projetos-title">
                 <h1>Projetos</h1>
                 <div class="traco"></div>
             </div>
-            <div class="projetos-content col">
+            <div class="projetos-content">
                 <p>
                     Para ver meus projetos acesse o meu GitHub! Cada repositório possui uma descrição simples sobre si!
                 </p>

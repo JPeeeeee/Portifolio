@@ -1,76 +1,51 @@
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-
-    flex-direction: column;
-}
-
-img#top-bar{
-    height: auto;
-    max-height: 20rem;
-    width: 100%;
-    position: absolute;
-    z-index: 0;
-}
-
-
-.traco{
-    height: .2rem;
-    background-color: black;
-    width: 2rem;
-}
-
 *{
-    z-index: 1;
+    margin: 0;
     font-family: 'Poppins', sans-serif;
 }
 
-.splash-nav{
+.container{
+    height: 100vh;
+    
     display: flex;
-    height: fit-content;
-}
-
-.splash-welcome{
-    display: flex;
-    margin-top: 3rem;
     justify-content: center;
     align-items: center;
+
+    flex-direction: column;
 }
 
-.splash-nav p{
-    color: white;
-    font-size: 3rem;
-    font-weight: bold;
+.background{
+    aspect-ratio: 960/540;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
 
-    transition: all .2s ease;
+.svg-image{
+    background-image: url('./images/layered-waves-haikei1.svg');
 }
 
 .splash-description{
-    margin-top: 15rem;
-}
-
-.splash-description-text{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+
+    margin-top: 3rem;
 }
 
-.splash-description-text p{
-    color: grey;
-    font-weight: light;
-    letter-spacing: .3rem;
-    margin: 0;
-}
-
-.splash-description-text h2{
+.splash-description h2{
     letter-spacing: .2rem;
 }
 
-.splash-button-container p{
+.splash-description p{
+    color: grey;
+    font-weight: light;
+    letter-spacing: .3rem;
     margin: 0;
 }
 
@@ -79,7 +54,22 @@ img#top-bar{
     justify-content: center;
     align-items: center;
 
-    margin-top: 5rem;
+    margin-top: 2rem;
+}
+
+.splash-button-container{
+    height: 3rem;
+    width: 15rem;
+
+    padding: 0;
+
+    border-radius: 2rem;
+
+    background-color: black;
+}
+
+.splash-button-container p{
+    margin: 0;
 }
 
 .splash-button-container a{
@@ -95,41 +85,15 @@ img#top-bar{
     transition: all .2s ease;
 }
 
-.splash-button-container{
-    height: 3rem;
-    width: 15rem;
-
-    padding: 0;
-
-    border-radius: 2rem;
-
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(25,25,25,1) 100%);
-}
-
 .splash-button-container a:hover{
     background-color: white;
     color: black;
     border: 1px solid black;
 }
 
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 1024px){
-    .splash-description-text p{
+    .splash-description p{
         font-size: smaller;
-    }
-
-    img#top-bar{
-        opacity: 0;
-        transition: all .2s ease;
     }
 
     .splash-nav p{
